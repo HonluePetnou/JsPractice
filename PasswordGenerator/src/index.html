@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+<!-- component -->
+<div class="base" id="main">
+  <div class="bg-white font-semibold rounded-3xl border shadow-lg p-10 max-w-xs w-3/5 ">
+    <h1 class="text-2xl">Password Generator</h1>
+    <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
+    <!-- div of input -->
+    <div>
+      <input type="text" id="results" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " placeholder="your Password is here..." disabled>
+      <p class="my-2">
+        <div class="flex justify-between">
+          <span>Range</span>
+          <span id="number"></span>
+        </div>
+        <input id="default-range" type="range" min="1" max="30" value="12"  class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+      </p>
+    </div>
+    <!-- div of chekboxes -->
+    <ul>
+        <li class="inline-flex items-center mt-3" id="Uppercase">
+            <input type="checkbox" class="form-checkbox h-5 w-5 text-gray-600" id="Uppercase"><span class="ml-2 text-gray-700">Uppercase letter</span>
+        </li>
+        <li class="inline-flex items-center mt-3" id="Lowercase">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-gray-600" id="Lowercase" checked><span class="ml-2 text-gray-700">Lowercase letter</span>
+        </li>
+        <li class="inline-flex items-center mt-3 mr-12" id="Numbers">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-gray-600" id="Numbers"><span class="ml-4 text-gray-700">Numbers </span>
+        </li>
+        <li class="inline-flex items-center mt-3" id="Special">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-gray-600" id="Special"><span class="ml-2 text-gray-700">Special charater</span>
+        </li>
+      </ul>
+    <div class="flex justify-between" id="btn">
+
+      <button id="validate"  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5 ">
+        Generate
+      </button>
+      <button id="copy" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-5 ">
+        Copy
+      </button>
+      
+    </div>
+    <div class="w-full text-white p-2 mt-2" id="weak"></div>
+   </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

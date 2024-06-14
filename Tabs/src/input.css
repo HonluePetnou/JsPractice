@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    @apply inline-block p-4 text-blue-600 bg-gray-100 ;
+}
+.desactive{
+    @apply inline-block p-4 rounded-2xl hover:text-white hover:bg-gray-500;
+}
+.show{
+    @apply inline-block p-4 text-gray-600 bg-gray-100 ;
+}
+.hidde{
+    @apply hidden;
+}

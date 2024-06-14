@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./fa-5/css/all.css">
+</head>
+<body >
+
+<!-- component -->
+<div class="bg-red-500 font-sans h-screen w-full flex flex-row justify-center items-center">
+  <div class="card w-2/5 mx-auto bg-white  shadow-xl hover:shadow rounded-lg">
+    <!-- my form and the heading-->
+     <div class="px-6 text-center mt-2 font-light text-sm ">
+      <!-- image -->
+      <div class="flex justify-center">
+        <img src="trade_4256823.png" alt="" srcset="" class="h-14 w-14 left-1/2">
+      </div>
+      <h1 class="text-2xl">Currencies Converter</h1>
+      <form action="" class="flex flex-row justify-around pt-5">
+        <div class="w-2/3">
+          <input type="number" value="100" id="phone"  class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter the amount...">
+        </div> 
+        <button type="button" id="submit"  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Convert</button>
+
+      </form>
+     </div>
+     <!-- my dropdown fields  -->
+     <div class="flex p-4" >
+      <div class="flex flex-col w-1/2">
+        <label for="section1" class="text-center">Base devise</label>
+        <select id="section1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+  
+        </select>
+      </div>
+      <div class="flex flex-col w-1/2">
+        <label for="section2" class="text-center">Change devise</label>
+        <select id="section2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+  
+        </select>
+      </div>
+
+     </div>
+     <!-- results -->
+     <div class="flex justify-center p-4 bg-red-400 text-white " >
+      <p id="results" class="text-center"></p>
+     </div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .base {
+      @apply flex items-center justify-center flex-col h-screen ;
+    }
+  }
+  

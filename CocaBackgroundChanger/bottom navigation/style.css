@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+}
+.logo{
+    padding-left: 45px;
+    font-size: larger;
+}
+ul{
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+}
+ul a:link {
+    color: black;
+    text-decoration: none;
+}
+ul a:visited {
+    color: black;
+    text-decoration: none;
+}
+ul li{
+    padding-right: 45px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+@media screen and (max-width : 480px) {
+    ul{
+        display: none;
+    }
+}
